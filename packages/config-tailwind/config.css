@@ -1,0 +1,65 @@
+@theme {
+  --font-sans: Poppins, sans-serif;
+  --color-black: oklch(0.1321 0.0322 250.92);
+  /* --color-gray-100: oklch(0.983 0.004 286.33);
+  --color-gray-300: oklch(0.85 0.003 285);
+  --color-gray-500: oklch(0.7 0.002 280);
+  --color-gray-700: oklch(0.5 0.001 270);
+  --color-gray-900: oklch(0.3257 0 0); */
+  --color-red: oklch(0.6675 0.1693 22.81);
+  --color-red-100: oklch(0.95 0.1693 22.81);
+  --color-red-300: oklch(0.78 0.1693 22.81);
+  --color-red-500: oklch(0.6675 0.1693 22.81);
+  --color-red-700: oklch(0.5 0.1693 22.81);
+  --color-red-900: oklch(0.35 0.1693 22.81);
+  --color-yellow: oklch(0.8235 0.1705 79.42);
+  --color-yellow-100: oklch(0.97 0.1705 79.42);
+  --color-yellow-300: oklch(0.91 0.1705 79.42);
+  --color-yellow-500: oklch(0.8235 0.1705 79.42);
+  --color-yellow-700: oklch(0.7 0.1705 79.42);
+  --color-yellow-900: oklch(0.55 0.1705 79.42);
+  --color-green: oklch(0.8588 0.1352 169.39);
+  --color-green-100: oklch(0.97 0.1352 169.39);
+  --color-green-300: oklch(0.91 0.1352 169.39);
+  --color-green-500: oklch(0.82 0.1352 169.39);
+  --color-green-700: oklch(0.7 0.1352 169.39);
+  --color-green-900: oklch(0.5 0.1352 169.39);
+  --color-blue: oklch(0.75 0.18 250);
+  --color-blue-100: oklch(0.95 0.18 250);
+  --color-blue-300: oklch(0.87 0.18 250);
+  --color-blue-500: oklch(0.75 0.18 250);
+  --color-blue-700: oklch(0.55 0.18 250);
+  --color-blue-900: oklch(0.35 0.18 250);
+  --color-purple: oklch(0.449 0.2239 303.99);
+  --color-purple-100: oklch(0.7 0.2239 303.99);
+  --color-purple-300: oklch(0.6 0.2239 303.99);
+  --color-purple-500: oklch(0.449 0.2239 303.99);
+  --color-purple-700: oklch(0.32 0.2239 303.99);
+  --color-purple-900: oklch(0.18 0.2239 303.99);
+  --color-indigo: oklch(0.3612 0.2047 282.9);
+  --color-indigo-100: oklch(0.6 0.2047 282.9);
+  --color-indigo-300: oklch(0.5 0.2047 282.9);
+  --color-indigo-500: oklch(0.3612 0.2047 282.9);
+  --color-indigo-700: oklch(0.25 0.2047 282.9);
+  --color-indigo-900: oklch(0.13 0.2047 282.9);
+  --color-pink: oklch(0.5417 0.213 335.86);
+  --color-pink-100: oklch(0.9 0.213 335.86);
+  --color-pink-300: oklch(0.7 0.213 335.86);
+  --color-pink-500: oklch(0.5417 0.213 335.86);
+  --color-pink-700: oklch(0.38 0.213 335.86);
+  --color-pink-900: oklch(0.22 0.213 335.86);
+}
+
+@layer utilities {
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+}

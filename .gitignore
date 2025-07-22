@@ -1,0 +1,22 @@
+.DS_Store
+node_modules
+.turbo
+*.log
+dist
+dist-ssr
+*.local
+.env.*
+.cache
+server/dist
+public/dist
+coverage
+.vscode/settings.json
+rawDataDump
+**/out
+metadata.ts
+# Local Netlify folder
+.netlify
+# Terraform
+.terraform
+*storybook.log
+storybook-static

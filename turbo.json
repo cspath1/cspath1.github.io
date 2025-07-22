@@ -1,0 +1,73 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "globalDependencies": [".env.local", ".env"],
+  "tasks": {
+    "build": {
+      "dependsOn": ["^build", "^generate"],
+      "outputs": ["dist/**"]
+    },
+    "build:staging": {
+      "dependsOn": ["^build", "^build:staging", "^generate"],
+      "outputs": ["dist/**"]
+    },
+    "clean": {
+      "cache": false
+    },
+    "clean:deploy": {
+      "cache": false
+    },
+    "db-setup": {
+      "cache": false
+    },
+    "dev": {
+      "cache": false,
+      "persistent": true,
+      "dependsOn": ["^build", "^generate"]
+    },
+    "generate": {
+      "dependsOn": ["^generate"],
+      "cache": true
+    },
+    "lint": {},
+    "migrate-up": {
+      "cache": false
+    },
+    "migrate-down": {
+      "cache": false
+    },
+    "migrate-create": {
+      "cache": false
+    },
+    "migrate-status": {
+      "cache": false
+    },
+    "release": {
+      "dependsOn": ["^release"],
+      "outputLogs": "new-only",
+      "cache": false
+    },
+    "test": {
+      "dependsOn": ["^build"],
+      "cache": false
+    },
+    "test:cov": {
+      "dependsOn": ["^test"],
+      "outputs": ["coverage/**"]
+    },
+    "test:debug": {
+      "cache": false
+    },
+    "test:e2e": {},
+    "test:watch": {
+      "cache": false
+    },
+    "start:prod": {
+      "cache": false,
+      "persistent": true
+    },
+    "storybook": {
+      "cache": false,
+      "persistent": true
+    }
+  }
+}

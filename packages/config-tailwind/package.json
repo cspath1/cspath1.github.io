@@ -1,0 +1,17 @@
+{
+  "name": "@repo/tailwind-config",
+  "version": "0.0.1",
+  "dependencies": {},
+  "devDependencies": {
+    "@repo/release-it-config": "workspace:*",
+    "release-it": "^17.0.1",
+    "tailwindcss": "^4.0.0"
+  },
+  "license": "MIT",
+  "main": "config.css",
+  "scripts": {
+    "clean": "pnpm dlx rimraf node_modules",
+    "clean:deploy": "rm -rf node_modules",
+    "release": "release-it --ci"
+  }
+}

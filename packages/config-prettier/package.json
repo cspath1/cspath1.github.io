@@ -1,0 +1,16 @@
+{
+  "name": "@repo/prettier-config",
+  "version": "1.1.0",
+  "main": "./prettier-config.json",
+  "scripts": {
+    "clean": "pnpm dlx rimraf node_modules",
+    "clean:deploy": "rm -rf node_modules",
+    "release": "release-it --ci"
+  },
+  "devDependencies": {
+    "@repo/release-it-config": "workspace:*",
+    "prettier": "^3.1.1",
+    "prettier-plugin-tailwindcss": "^0.5.11",
+    "release-it": "^17.0.1"
+  }
+}

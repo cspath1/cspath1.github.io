@@ -1,0 +1,55 @@
+{
+  "name": "@boostpoint/prog_marketing_api",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "dotenv -e .env -c -- turbo build --env-mode=loose",
+    "build:staging": "dotenv -e .env -c -- turbo run build:staging --env-mode=loose",
+    "clean": "turbo run clean && pnpm dlx rimraf node_modules",
+    "clean:deploy": "turbo run clean:deploy && rm -rf node_modules",
+    "commit": "git-cz",
+    "db-setup": "dotenv -e .env -c -- turbo run db-setup",
+    "dev": "dotenv -e .env.local -e .env -- turbo run dev --concurrency 11 --env-mode=loose",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "generate": "dotenv -e .env -c -- turbo run generate --env-mode=loose",
+    "lint": "turbo lint",
+    "migrate-create": "dotenv -e .env -c -- turbo run migrate-create --env-mode=loose",
+    "migrate-down": "dotenv -e .env -c -- turbo run migrate-down --env-mode=loose",
+    "migrate-status": "dotenv -e .env -c -- turbo run migrate-status --env-mode=loose",
+    "migrate-up": "dotenv -e .env -c -- turbo run migrate-up --env-mode=loose",
+    "prepare": "husky install",
+    "release": "turbo run release --concurrency=1 --env-mode=loose",
+    "test": "turbo run test --env-mode=loose",
+    "test:cov": "dotenv -e .env -c -- turbo run test:cov --env-mode=loose",
+    "test:debug": "dotenv -e .env -c -- turbo run test:debug --env-mode=loose",
+    "test:e2e": "dotenv -e .env -c -- turbo run test:e2e --env-mode=loose",
+    "test:watch": "dotenv -e .env -c -- turbo run test:watch --env-mode=loose",
+    "start:prod": "turbo run start:prod --concurrency 15 --env-mode=loose",
+    "storybook": "turbo run storybook"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^18.4.4",
+    "@commitlint/config-conventional": "^18.4.4",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "dotenv-cli": "^7.3.0",
+    "eslint": "^8.54.0",
+    "husky": "^8.0.0",
+    "prettier": "^3.1.0",
+    "syncpack": "^12.3.0",
+    "turbo": "^2.0.6"
+  },
+  "engines": {
+    "node": "22",
+    "pnpm": "10.12.2"
+  },
+  "packageManager": "pnpm@10.12.2+sha512.a32540185b964ee30bb4e979e405adc6af59226b438ee4cc19f9e8773667a66d302f5bfee60a39d3cac69e35e4b96e708a71dd002b7e9359c4112a1722ac323f"
+}

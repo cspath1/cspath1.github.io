@@ -1,0 +1,15 @@
+{
+  "name": "@repo/release-it-config",
+  "version": "1.1.0",
+  "license": "MIT",
+  "main": ".release-it.js",
+  "scripts": {
+    "clean": "pnpm dlx rimraf node_modules",
+    "clean:deploy": "rm -rf node_modules",
+    "release": "release-it --ci"
+  },
+  "devDependencies": {
+    "@release-it/conventional-changelog": "^8.0.1",
+    "release-it": "^17.1.1"
+  }
+}
