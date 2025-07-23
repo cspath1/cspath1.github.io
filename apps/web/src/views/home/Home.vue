@@ -1,10 +1,16 @@
 <script setup lang="ts">
+import { useRouter } from 'vue-router';
 import Container from '../../components/Container/Container.vue';
 import Header from '../../components/Headers/Header.vue';
 import Paragraph from '../../components/Paragraph/Paragraph.vue';
 import { Icon } from '@iconify/vue';
 let window: any = globalThis;
 
+const router = useRouter();
+
+const aboutLink = () => {
+  router.push('/about');
+};
 </script>
 
 <template>
@@ -33,7 +39,7 @@ let window: any = globalThis;
       </a>
     </div>
     <nav class="flex space-x-4">
-      <a href="/about" class="text-gray-600 dark:text-gray-300 hover:underline">About</a>
+      <a href="/about" class="text-gray-600 dark:text-gray-300 hover:underline" @click.prevent="aboutLink">About</a>
     </nav>
   </div>
   <RouterView></RouterView>
