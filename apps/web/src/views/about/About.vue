@@ -2,6 +2,8 @@
 import Container from '../../components/Container/Container.vue';
 import Header from '../../components/Headers/Header.vue';
 import Paragraph from '../../components/Paragraph/Paragraph.vue';
+
+document.title = "About Cody";
 </script>
 
 <template>

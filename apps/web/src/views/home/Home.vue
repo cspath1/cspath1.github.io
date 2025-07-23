@@ -39,7 +39,7 @@ const aboutLink = () => {
       </a>
     </div>
     <nav class="flex space-x-4">
-      <a href="/about" class="text-gray-600 dark:text-gray-300 hover:underline" @click.prevent="aboutLink">About</a>
+      <a href="/about" class="text-gray-600 dark:text-gray-300 hover:underline" @click.prevent="aboutLink">About Me</a>
     </nav>
   </div>
   <RouterView></RouterView>
