@@ -36,8 +36,5 @@ let window: any = globalThis;
       <a href="/about" class="text-gray-600 dark:text-gray-300 hover:underline">About</a>
     </nav>
   </div>
-  <Container class="flex flex-col items-center justify-start min-h-screen space-y-4 pt-12 px-8">
-    <Header>Cody's Portfolio</Header>
-    <Paragraph>Welcome to Cody's Portfolio! This is currently under construction.</Paragraph>
-  </Container>
+  <RouterView></RouterView>
 </template>
