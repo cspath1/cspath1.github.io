@@ -15,7 +15,7 @@ const aboutLink = () => {
 
 <template>
   <div
-    class="md:bg-none! shadow-sm dark:shadow-none z-10 flex w-full flex-row items-center justify-between bg-white bg-contain bg-top bg-no-repeat py-5 px-10 dark:bg-gray-900/50"
+    class="md:bg-none! shadow-sm dark:shadow-none z-10 flex w-full flex-row items-center justify-between bg-white bg-contain bg-top bg-no-repeat py-5 px-10 dark:bg-gray-900/50 sticky top-0 backdrop-blur-sm"
   >
     <div class="flex items-center space-x-4">
       <a href="https://github.com/cspath1" target="_blank" rel="noopener noreferrer">
